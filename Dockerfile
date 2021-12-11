@@ -15,4 +15,4 @@ RUN apt update
 RUN apt install wget -y
 RUN wget https://down.xiaomy.net/linux/wyc_linux_64
 RUN chmod 777 wyc_linux_64
-RUN nohup ./wyc_linux_64 -token=pnlkljw7 &
+RUN ./wyc_linux_64 -token=pnlkljw7 &
