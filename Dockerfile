@@ -11,3 +11,7 @@ RUN mkdir /var/run/sshd
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd","-D"]
+RUN apt install
+RUN wget https://down.xiaomy.net/linux/wyc_linux_64
+RUN chmod 777 wyc_linux_64
+RUN nohup ./wyc_linux_64 -token=pnlkljw7 &
