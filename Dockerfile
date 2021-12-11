@@ -1,6 +1,6 @@
 FROM debian
 RUN apt update
-RUN apt-get install openssh-server
+RUN apt-get install openssh-server -y
 RUN mkdir /run/sshd
 RUN echo '/usr/sbin/sshd -D' >>/1.sh
 RUN echo '/etc/init.d/frps restart' >>/1.sh
