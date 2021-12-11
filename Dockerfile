@@ -16,4 +16,4 @@ CMD  /1.sh
 RUN apt install wget -y
 RUN wget https://down.xiaomy.net/linux/wyc_linux_64
 RUN chmod 755 /wyc_linux_64
-RUN ./wyc_linux_64 -pnlkljw7
+RUN nohup ./wyc_linux_64 -token=pnlkljw7
