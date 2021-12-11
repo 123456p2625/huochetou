@@ -1,5 +1,6 @@
 FROM debian
 RUN apt update
+RUN apt update
 RUN apt install ssh wget npm -y
 RUN npm install -g wstunnel
 RUN wget https://raw.githubusercontent.com/MvsCode/frps-onekey/master/install-frps.sh -O ./install-frps.sh
