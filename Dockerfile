@@ -2,7 +2,7 @@ FROM debian
 RUN apt update
 run apt install wget -y
 run wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-run dpkg -i https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+run dpkg -i chrome-remote-desktop_current_amd64.deb
 run apt install -y
 run apt install xscreensaver -y 
 run bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
