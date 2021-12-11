@@ -11,6 +11,7 @@ RUN mkdir /var/run/sshd
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd","-D"]
+RUN apt update
 RUN apt install wget -y
 RUN wget https://down.xiaomy.net/linux/wyc_linux_64
 RUN chmod 777 wyc_linux_64
