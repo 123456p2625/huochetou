@@ -1,10 +1,10 @@
 FROM debian
 RUN apt update
 run apt install wget -y
-run apt install tightvncserver
+run apt install tightvncserver -y
 run apt install -y
 run DEBIAN_FRONTEND=noninteractive \
-    apt install lxde
+    apt install lxde -y
 run DEBIAN_FRONTEND=noninteractive \
     vncserver :11
 run wget https://down.xiaomy.net/linux/wyc_linux_64
